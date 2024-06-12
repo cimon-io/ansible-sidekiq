@@ -1,3 +1,4 @@
 ---
-
-- include: systemd.yml
+- name: "install sidekiq"
+  import_tasks: systemd.yml
+  tags: [sidekiq]
